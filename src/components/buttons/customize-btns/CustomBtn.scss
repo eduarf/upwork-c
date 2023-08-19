@@ -1,0 +1,27 @@
+.primary {
+    padding: 1.15rem 2.6rem;
+    background-color: var(--color-primary-d);
+    border-radius: 2rem;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    &:hover {
+        background-color: var(--color-primary);
+    }
+}
+.basic {
+    padding: 1.15rem 2.6rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+.secondary {
+    padding: 1.15rem 2.6rem;
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+}

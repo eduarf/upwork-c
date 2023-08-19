@@ -1,16 +1,23 @@
 .nav-container {
-    position: relative;
-    padding: 1rem;
-    z-index: 10;
+  position: relative;
+  padding: 1.4rem 2rem;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   .nav-left {
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
     .logo {
-        h3 {
-            font-size: 1.5rem;
-        }
+      h3 {
+        font-size: 2.2rem;
+        color: var(--color-primary);
+      }
     }
     .nav-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       ul {
         display: flex;
         gap: 2rem;
@@ -20,7 +27,7 @@
           justify-content: center;
           cursor: pointer;
           font-size: 1.4rem;
-          gap: .2rem;
+          gap: 0.2rem;
           font-weight: 500;
           .nav-icon {
             color: black;
@@ -29,6 +36,64 @@
           &:hover {
             color: var(--color-primary);
           }
+        }
+      }
+    }
+  }
+  .nav-right {
+    display: flex;
+    .search-icon {
+      font-size: 2rem;
+      position: absolute;
+      left: 1.5rem;
+    }
+    &__search {
+      border-radius: 5rem;
+      margin-right: 1rem;
+      width: 32rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+      border: 2px solid #f2f7f2;
+      gap: .2rem;
+      &:hover {
+        background-color: #f2f7f2;
+        border: 2px solid transparent;
+      }
+      input {
+        border: none;
+        height: 100%;
+        width: 75%;
+        border-radius: 5rem;
+        padding-left: 4.5rem;
+        outline: none;
+        &:hover {
+          background-color: #fff;
+        }
+        &:focus {
+          border: 2px solid rgb(225, 224, 224);
+        }
+        &::placeholder {
+          color: black;
+          font-size: 1.4rem;
+          font-weight: 500;
+        }
+      }
+      .search-talent {
+        font-size: 1.4rem;
+        font-weight: 500;
+        width: 25%;
+        height: 100%;
+        border-radius: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.2rem;
+        cursor: pointer;
+        position: relative;
+        &:hover {
+          background-color: #fff;
         }
       }
     }
