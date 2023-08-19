@@ -20,6 +20,29 @@ export const navItems = [
     }
 ];
 
+export const navBottomItems = [
+    {
+        id: nanoid(),
+        name: 'Development & IT',
+    },
+    {
+        id: nanoid(),
+        name: 'AI Services',
+    },
+    {
+        id: nanoid(),
+        name: 'Design & Creative',
+    },
+    {
+        id: nanoid(),
+        name: 'Sales & Marketing',
+    },
+    {
+        id: nanoid(),
+        name: 'Admin & Customer Support',
+    },
+];
+
 export const dropDownTalentItems = [
     {
         id: nanoid(),

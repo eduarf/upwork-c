@@ -2,7 +2,7 @@ import { useReducer, useState } from "react";
 import "./Navbar.scss";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { BiSearch } from "react-icons/bi";
-import { navItems } from "../../../data";
+import { navItems, navBottomItems } from "../../../data";
 import FindTalentNav from "../findtalent-nav/FindTalentNav";
 import FindWorkNav from "../findwork-nav/FindWorkNav";
 import WhyUpworkNav from "../whyupwork-nav/WhyUpworkNav";
@@ -10,7 +10,6 @@ import CustomBtn from "../buttons/customize-btns/CustomBtn";
 import DropdownTalent from "../dropdown-talent/DropdownTalent";
 
 function reducer(state, action) {
-  console.log(action.type);
   switch (action.type) {
     case "FIND_TALENT":
       return {
@@ -45,53 +44,63 @@ const Navbar = () => {
 
   return (
     <div className="nav-container">
-      {/* Left Container */}
-      <div className="nav-left">
-        <div className="logo">
-          <h3>upwork</h3>
-        </div>
-        <div className="nav-menu">
-          <ul>
-            {navItems.map((item) => {
-              return (
-                <li
-                  key={item.id}
-                  onMouseEnter={() => dispatch({ type: item.type })}
-                  onMouseLeave={() => dispatch({ type: item.type })}
-                >
-                  {item.name}
-                  {state[item.type] ? (
-                    <IoIosArrowUp className="nav-icon" />
-                  ) : (
-                    <IoIosArrowDown className="nav-icon" />
-                  )}{" "}
-                </li>
-              );
-            })}
-            <li>Enterprise </li>
-          </ul>
-        </div>
-      </div>
-      {/* Right Container */}
-      <div className="nav-right">
-        <div className="nav-right__search">
-          <BiSearch className="search-icon" />
-          <input type="text" placeholder="Search" />
-          <div
-            className="search-talent"
-            onClick={() => setShowTalent(!showTalent)}
-          >
-            Talent <IoIosArrowDown /> {showTalent && <DropdownTalent />}{" "}
+      <div className="nav-top">
+        {/* Left Container */}
+        <div className="nav-left">
+          <div className="logo">
+            <h3>upwork</h3>
+          </div>
+          <div className="nav-menu">
+            <ul>
+              {navItems.map((item) => {
+                return (
+                  <li
+                    key={item.id}
+                    onMouseEnter={() => dispatch({ type: item.type })}
+                    onMouseLeave={() => dispatch({ type: item.type })}
+                  >
+                    {item.name}
+                    {state[item.type] ? (
+                      <IoIosArrowUp className="nav-icon" />
+                    ) : (
+                      <IoIosArrowDown className="nav-icon" />
+                    )}{" "}
+                  </li>
+                );
+              })}
+              <li>Enterprise </li>
+            </ul>
           </div>
         </div>
-        <CustomBtn name="Log in" type="basic" />
-        <CustomBtn name="Sign up" type="primary" />
-      </div>
+        {/* Right Container */}
+        <div className="nav-right">
+          <div className="nav-right__search">
+            <BiSearch className="search-icon" />
+            <input type="text" placeholder="Search" />
+            <div
+              className="search-talent"
+              onClick={() => setShowTalent(!showTalent)}
+            >
+              Talent <IoIosArrowDown /> {showTalent && <DropdownTalent />}{" "}
+            </div>
+          </div>
+          <CustomBtn name="Log in" type="basic" />
+          <CustomBtn name="Sign up" type="primary" />
+        </div>
 
-      {/* Dropdowns */}
-      {state.FIND_TALENT && <FindTalentNav />}
-      {state.FIND_WORK && <FindWorkNav />}
-      {state.WHY_UPWORK && <WhyUpworkNav />}
+        {/* Dropdowns */}
+        {state.FIND_TALENT && <FindTalentNav />}
+        {state.FIND_WORK && <FindWorkNav />}
+        {state.WHY_UPWORK && <WhyUpworkNav />}
+      </div>
+      <div className="nav-bottom">
+        <ul>
+          {navBottomItems.map((item) => {
+            return <li key={item}> {item.name} </li>;
+          })}
+          <li className="more">More <IoIosArrowDown /> </li>
+        </ul>
+      </div>
     </div>
   );
 };
