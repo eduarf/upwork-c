@@ -63,3 +63,30 @@ export const dropDownTalentItems = [
         icon: <BsFillBagFill />
     }
 ];
+
+export const moreDropDownItems = [
+    {
+        id: nanoid(),
+        name: 'Writing & Translation',
+    },
+    {
+        id: nanoid(),
+        name: 'Finance & Accounting',
+    },
+    {
+        id: nanoid(),
+        name: 'HR & Training',
+    },
+    {
+        id: nanoid(),
+        name: 'Legal',
+    },
+    {
+        id: nanoid(),
+        name: 'Engineering & Architecture',
+    },
+    {
+        id: nanoid(),
+        name: 'See all specializations'
+    },
+];

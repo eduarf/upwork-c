@@ -8,6 +8,7 @@ import FindWorkNav from "../findwork-nav/FindWorkNav";
 import WhyUpworkNav from "../whyupwork-nav/WhyUpworkNav";
 import CustomBtn from "../buttons/customize-btns/CustomBtn";
 import DropdownTalent from "../dropdown-talent/DropdownTalent";
+import DropdownMore from "../dropdownMore/dropdownMore";
 
 function reducer(state, action) {
   switch (action.type) {
@@ -41,6 +42,7 @@ const Navbar = () => {
     WHY_UPWORK: false,
   });
   const [showTalent, setShowTalent] = useState(false);
+  const [showMore, setShowMore] = useState(false);
 
   return (
     <div className="nav-container">
@@ -98,7 +100,10 @@ const Navbar = () => {
           {navBottomItems.map((item) => {
             return <li key={item}> {item.name} </li>;
           })}
-          <li className="more">More <IoIosArrowDown /> </li>
+          <li className="more" onMouseEnter={() => setShowMore(!showMore)} onMouseLeave={() => setShowMore(!showMore)}>
+            {" "}
+            More <IoIosArrowDown /> {showMore && <DropdownMore />}{" "}
+          </li>
         </ul>
       </div>
     </div>
