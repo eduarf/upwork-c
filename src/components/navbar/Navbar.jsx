@@ -3,9 +3,6 @@ import "./Navbar.scss";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { BiSearch } from "react-icons/bi";
 import { navItems, navBottomItems } from "../../../data";
-import FindTalentNav from "../findtalent-nav/FindTalentNav";
-import FindWorkNav from "../findwork-nav/FindWorkNav";
-import WhyUpworkNav from "../whyupwork-nav/WhyUpworkNav";
 import CustomBtn from "../buttons/customize-btns/CustomBtn";
 import DropdownTalent from "../dropdown-talent/DropdownTalent";
 import DropdownMore from "../dropdownMore/dropdownMore";
@@ -67,6 +64,7 @@ const Navbar = () => {
                     ) : (
                       <IoIosArrowDown className="nav-icon" />
                     )}{" "}
+                    { state[item.type] && item.component }
                   </li>
                 );
               })}
@@ -91,9 +89,9 @@ const Navbar = () => {
         </div>
 
         {/* Dropdowns */}
-        {state.FIND_TALENT && <FindTalentNav />}
-        {state.FIND_WORK && <FindWorkNav />}
-        {state.WHY_UPWORK && <WhyUpworkNav />}
+        {/* {state.FIND_TALENT && <FindTalentNav />}
+        {state.FIND_WORK && <FindWorkDropdown />}
+        {state.WHY_UPWORK && <WhyUpworkNav />} */}
       </div>
       <div className="nav-bottom">
         <ul>

@@ -1,0 +1,40 @@
+.findwork-dropdown {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    top: 110%;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4rem;
+    padding: 2.5rem 5rem 5rem 5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 5px;
+    &::before {
+        content: '';
+        position: absolute;
+        height: 4rem;
+        width: 100%;
+        background-color: transparent;
+        top:  -20%;
+        left: 0;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        &:hover {
+            background-color: var(--color-gray-l);
+        }
+        h4 {
+            font-size: 1.4rem;
+            color: #001e00;
+            font-weight: 500;
+        }
+        p {
+            font-size: 1.1rem;
+            color: gray;
+        }
+    }
+}
