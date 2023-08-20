@@ -2,8 +2,8 @@ import { nanoid } from "nanoid";
 import { HiOutlineUserGroup } from "react-icons/hi";
 import { BsCalendar2Check, BsFillBagFill } from "react-icons/bs";
 import FindTalentNav from "./src/components/findtalent-nav/FindTalentNav";
-import FindWorkDropdown from "./src/components/findwork-nav/FindWorkDropdown";
-import WhyUpworkNav from "./src/components/whyupwork-nav/WhyUpworkNav";
+import FindWorkDropdown from "./src/components/find-work-dropdown/FindWorkDropdown";
+import WhyUpworkDropdown from "./src/components/why-upwork-dropdown/WhyUpworkDropdown";
 
 export const navItems = [
   {
@@ -22,7 +22,7 @@ export const navItems = [
     id: nanoid(),
     name: "Why Upwork",
     type: "WHY_UPWORK",
-    component: <WhyUpworkNav />,
+    component: <WhyUpworkDropdown />,
   },
 ];
 
@@ -112,5 +112,46 @@ export const findWorkDropdownItems = [
     id: nanoid(),
     header: "Find ways to promote yourself",
     description: "Show clients you're the one they want.",
+  },
+];
+
+export const whyUpworkDropdownItemsLeft = [
+  {
+    id: nanoid(),
+    header: "Success Stories",
+    description: "Discover how teams work strategically and grow together.",
+  },
+  {
+    id: nanoid(),
+    header: "Reviews",
+    description: "See what it's like to collaborate on Upwork.",
+  },
+  {
+    id: nanoid(),
+    header: 'How to hire',
+    description: 'Learn about the different ways to get work done.',
+  },
+  {
+    id: nanoid(),
+    header: 'How to find work',
+    description: 'Learn about how to grow your independent career.'
+  },
+];
+
+export const whyUpworkDropdownItemsRight = [
+  {
+    id: nanoid(),
+    header: 'Guides',
+    description: 'Getting Started as a Freelancer',
+  },
+  {
+    id: nanoid(),
+    header: 'Guides',
+    description: 'Growing Your Freelance Career',
+  },
+  {
+    id: nanoid(),
+    header: 'Guides',
+    description: 'Hiring & Working with Independent Talent',
   },
 ];
