@@ -64,7 +64,7 @@ const Navbar = () => {
                     ) : (
                       <IoIosArrowDown className="nav-icon" />
                     )}{" "}
-                    { state[item.type] && item.component }
+                    {state[item.type] && item.component}
                   </li>
                 );
               })}
@@ -87,18 +87,17 @@ const Navbar = () => {
           <CustomBtn name="Log in" type="basic" />
           <CustomBtn name="Sign up" type="primary" />
         </div>
-
-        {/* Dropdowns */}
-        {/* {state.FIND_TALENT && <FindTalentNav />}
-        {state.FIND_WORK && <FindWorkDropdown />}
-        {state.WHY_UPWORK && <WhyUpworkNav />} */}
       </div>
       <div className="nav-bottom">
         <ul>
           {navBottomItems.map((item) => {
-            return <li key={item}> {item.name} </li>;
+            return <li key={item.id}> {item.name} </li>;
           })}
-          <li className="more" onMouseEnter={() => setShowMore(!showMore)} onMouseLeave={() => setShowMore(!showMore)}>
+          <li
+            className="more"
+            onMouseEnter={() => setShowMore(!showMore)}
+            onMouseLeave={() => setShowMore(!showMore)}
+          >
             {" "}
             More <IoIosArrowDown /> {showMore && <DropdownMore />}{" "}
           </li>

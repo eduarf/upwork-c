@@ -1,7 +1,7 @@
 import { nanoid } from "nanoid";
 import { HiOutlineUserGroup } from "react-icons/hi";
 import { BsCalendar2Check, BsFillBagFill } from "react-icons/bs";
-import FindTalentNav from "./src/components/findtalent-nav/FindTalentNav";
+import FindTalentDropdown from "./src/components/find-talent-dropdown/FindTalentDropdown";
 import FindWorkDropdown from "./src/components/find-work-dropdown/FindWorkDropdown";
 import WhyUpworkDropdown from "./src/components/why-upwork-dropdown/WhyUpworkDropdown";
 
@@ -10,7 +10,7 @@ export const navItems = [
     id: nanoid(),
     name: "Find Talent",
     type: "FIND_TALENT",
-    component: <FindTalentNav />,
+    component: <FindTalentDropdown />,
   },
   {
     id: nanoid(),
@@ -153,5 +153,26 @@ export const whyUpworkDropdownItemsRight = [
     id: nanoid(),
     header: 'Guides',
     description: 'Hiring & Working with Independent Talent',
+  },
+];
+
+export const findTalentDropdownItemsLeft = [
+  {
+    id: nanoid(),
+    header: 'Post a job and hire a pro',
+    subtitle: 'Talent Marketplace',
+    identity: 'TALENT_MARKETPLACE'
+  },
+  {
+    id: nanoid(),
+    header: 'Browse and buy projects',
+    subtitle: 'Project catalog',
+    identity: 'PROJECT_CATALOG'
+  },
+  {
+    id: nanoid(),
+    header: 'Get advice from an industry expert',
+    subtitle: 'Consultations',
+    identity: 'CONSULTATIONS'
   },
 ];
