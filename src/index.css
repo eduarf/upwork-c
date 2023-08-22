@@ -10,7 +10,7 @@
   --color-primary: rgb(20, 168, 0);
   --color-primary-d: rgb(16, 138, 0);
   --color-white: rgb(255, 255, 255);
-  --color-gray-l: rgb(242,247,242);
+  --color-gray-l: rgb(242, 247, 242);
 }
 html {
   font-size: 62.5%;

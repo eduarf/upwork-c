@@ -4,7 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { useReducer } from "react";
 import TalentMarketplace from '../talent-marketplace/TalentMarketplace';
 import Consultations from '../consultations/Consultations';
-import ProjetCatalog from '../project-catalog/ProjectCatalog';
+import ProjectCatalog from '../project-catalog/ProjectCatalog';
 
 
 function reducer(state, action) {
@@ -43,7 +43,7 @@ const FindTalentDropdown = () => {
       <div className="talent-dropdown__left">
         {findTalentDropdownItemsLeft.map((item) => {
           return (
-            <div key={item.id} className="item" onMouseOver={() => dispatch({type: item.identity})}>
+            <div key={item.id} style={{backgroundColor: state[item.identity] ? '#f2f7f2' : ''}} className="item" onMouseOver={() => dispatch({type: item.identity})}>
               <div>
                 <h3>{item.header}</h3>
                 <h4>{item.subtitle}</h4>
@@ -55,7 +55,7 @@ const FindTalentDropdown = () => {
       </div>
       <div className="talent-dropdown__right">
         { state.TALENT_MARKETPLACE && <TalentMarketplace /> }
-        { state.PROJECT_CATALOG && <ProjetCatalog /> }
+        { state.PROJECT_CATALOG && <ProjectCatalog /> }
         { state.CONSULTATIONS && <Consultations /> }
       </div>
     </div>

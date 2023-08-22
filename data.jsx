@@ -176,3 +176,46 @@ export const findTalentDropdownItemsLeft = [
     identity: 'CONSULTATIONS'
   },
 ];
+
+export const talentMarketplaceItems = [
+  {
+    id: nanoid(),
+    header: 'Development & IT',
+  },
+  {
+    id: nanoid(),
+    header: 'Design & Creative',
+  },
+  {
+    id: nanoid(),
+    header: 'Sales & Marketing',
+  },
+  {
+    id: nanoid(),
+    header: 'Writing & Translation',
+  },
+  {
+    id: nanoid(),
+    header: 'Admin & Customer Support',
+  },
+  {
+    id: nanoid(),
+    header: 'Finance & Accounting',
+  },
+  {
+    id: nanoid(),
+    header: 'HR & Training',
+  },
+  {
+    id: nanoid(),
+    header: 'Legal',
+  },
+  {
+    id: nanoid(),
+    header: 'Engineering & Architecture',
+  },
+  {
+    id: nanoid(),
+    header: 'Hire freelancers',
+  },
+];

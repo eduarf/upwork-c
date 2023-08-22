@@ -58,7 +58,7 @@ const Navbar = () => {
                     onMouseEnter={() => dispatch({ type: item.type })}
                     onMouseLeave={() => dispatch({ type: item.type })}
                   >
-                    {item.name}
+                    <span> {item.name}</span>
                     {state[item.type] ? (
                       <IoIosArrowUp className="nav-icon" />
                     ) : (
@@ -68,7 +68,7 @@ const Navbar = () => {
                   </li>
                 );
               })}
-              <li>Enterprise </li>
+              <li> <span>Enterprise</span> </li>
             </ul>
           </div>
         </div>
