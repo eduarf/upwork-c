@@ -219,3 +219,36 @@ export const talentMarketplaceItems = [
     header: 'Hire freelancers',
   },
 ];
+
+export const projectCatalogItems = [
+  {
+    id: nanoid(),
+    header: 'Logo Design',
+    image: 'https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/logo.cd04b531.jpg'
+  },
+  {
+    id: nanoid(),
+    header: 'Articles & Blog Posts',
+    image: 'https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/blog.d73af7fb.jpg'
+  },
+  {
+    id: nanoid(),
+    header: 'WordPress',
+    image: 'https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/wp.1acec44b.jpg',
+  },
+  {
+    id: nanoid(),
+    header: 'Social Media Marketing',
+    image: 'https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/smm.1a3a67a0.jpg'
+  },
+  {
+    id: nanoid(),
+    header: 'Video Editing',
+    image: 'https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/video.8e2caeb1.jpg',
+  },
+  {
+    id: nanoid(),
+    header: 'SEO',
+    image: 'https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/seo.bb0c74c3.jpg',
+  },
+];
