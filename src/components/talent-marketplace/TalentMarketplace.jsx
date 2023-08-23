@@ -1,6 +1,6 @@
 import "./TalentMarketplace.scss";
-import { AiOutlineArrowRight } from 'react-icons/ai';
 import { talentMarketplaceItems } from "../../../data";
+import RightArrowComp from '../right-arrow-comp/RightArrowComp';
 
 const TalentMarketplace = () => {
   return (
@@ -10,10 +10,7 @@ const TalentMarketplace = () => {
         <p>
           Learn about working with talent or explore your specific hiring needs.
         </p>
-        <a href="#">
-          Hire on Talent Marketplace
-          <AiOutlineArrowRight className="icon" />
-        </a>
+        <RightArrowComp content='Hire on Talent Marketplace' />
       </div>
 
       <div className="right-side">

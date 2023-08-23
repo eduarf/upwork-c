@@ -1,0 +1,13 @@
+a {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    &:hover {
+        text-decoration: none;
+    }
+    .icon {
+        color: var(--color-primary);
+        font-size: 1.4rem;
+    }
+}
