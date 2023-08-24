@@ -252,3 +252,31 @@ export const projectCatalogItems = [
     image: 'https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/seo.bb0c74c3.jpg',
   },
 ];
+
+export const consultationsItems = [
+  {
+    id: nanoid(),
+    header: 'Web Programming',
+    image: 'https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/web-programming.bba7813a.png'
+  },
+  {
+    id: nanoid(),
+    header: 'AI & Machine Learning',
+    image: 'https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/ai.b8aa0451.png'
+  },
+  {
+    id: nanoid(),
+    header: 'Marketing & Strategy',
+    image: 'https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/marketing.43b52b75.png'
+  },
+  {
+    id: nanoid(),
+    header: 'Social Media MArketing',
+    image: 'https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/social-media.775752fd.png'
+  },
+  {
+    id: nanoid(),
+    header: 'Website Builders & CMS',
+    image: 'https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/website-builders.6acb130a.png'
+  },
+];
