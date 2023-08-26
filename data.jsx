@@ -271,7 +271,7 @@ export const consultationsItems = [
   },
   {
     id: nanoid(),
-    header: 'Social Media MArketing',
+    header: 'Social Media Marketing',
     image: 'https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/social-media.775752fd.png'
   },
   {
