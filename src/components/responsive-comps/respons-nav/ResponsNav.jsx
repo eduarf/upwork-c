@@ -1,6 +1,7 @@
 import "./ResponsNav.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { hamburgerToggle } from "../../../features/hamburger/hamburgerSlice";
+import { searchToggle } from "../../../features/search/searchSlice";
 import CustomBtn from "../../buttons/customize-btns/CustomBtn";
 import { FiSearch } from 'react-icons/fi';
 
@@ -19,7 +20,7 @@ const ResponsNav = () => {
       </div>
       <div className="right-side">
         <CustomBtn name='Sign up' type='basic' />
-        <FiSearch className="search-icon" />
+        <FiSearch className="search-icon" onClick={() => dispatch(searchToggle())} />
       </div>
     </div>
   );
