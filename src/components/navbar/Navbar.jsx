@@ -6,6 +6,7 @@ import { navItems, navBottomItems } from "../../../data";
 import CustomBtn from "../buttons/customize-btns/CustomBtn";
 import DropdownTalent from "../dropdown-talent/DropdownTalent";
 import DropdownMore from "../dropdownMore/dropdownMore";
+import ResponsNav from "../responsive-comps/respons-nav/ResponsNav";
 
 function reducer(state, action) {
   switch (action.type) {
@@ -44,6 +45,7 @@ const Navbar = () => {
   return (
     <div className="nav-container">
       <div className="nav-top">
+        <ResponsNav />
         {/* Left Container */}
         <div className="nav-left">
           <div className="logo">

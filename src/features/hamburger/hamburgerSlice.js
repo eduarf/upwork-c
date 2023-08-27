@@ -9,19 +9,12 @@ const hamburgerSlice = createSlice({
   initialState,
   reducers: {
     // eslint-disable-next-line no-unused-vars
-    openHamburger: (state, action) => {
-      state.isOpen = true;
-      console.log(state.isOpen);
-    },
-    // eslint-disable-next-line no-unused-vars
-    closeHamburger: (state, action) => {
-      state.isOpen = false;
-      console.log(state.isOpen);
-      console.log(action.payload);
+    hamburgerToggle: (state, action) => {
+      state.isOpen = !state.isOpen;
     },
   },
 });
 
-export const { openHamburger, closeHamburger } = hamburgerSlice.actions;
+export const { hamburgerToggle } = hamburgerSlice.actions;
 
 export default hamburgerSlice.reducer;
