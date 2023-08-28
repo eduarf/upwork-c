@@ -8,10 +8,10 @@ const ResponsMenu = () => {
         <ul>
           <li>
             <div></div>
-          </li>
-          <li>Find Work</li>
-          <li>Why Upwork</li>
-          <li>Enterprise</li>
+          </li> 
+          <li>Find Work</li>  {/* I'm developing later */}
+          <li>Why Upwork</li> {/* I'm developing later */}
+          <li>Enterprise</li> {/* I'm developing later */}
           <li>
             {" "}
             <CustomBtn name="Log in" type="basic" />{" "}

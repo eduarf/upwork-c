@@ -1,0 +1,47 @@
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 5vh 5vw;
+    .left-side {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 2rem;
+        h1{
+            font-size: calc(2vw + 4.5rem);
+            line-height: 1;
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+        h3 {
+            color: var(--color-gray);
+            font-weight: 600;
+            font-size: 2rem;   
+            margin-bottom: 3rem;
+        }
+        .trusted-by {
+            margin-top: 3rem;
+            h4 {
+                font-size: 1.6rem;
+                color: #9aaa97;
+                font-weight: 600;
+            }
+            div {
+                display: flex;
+                gap: 3rem;
+                align-items: center;
+                margin-top: 1.5rem;
+            }
+        }
+    }
+    .right-side {
+        display: flex;
+        justify-content: flex-end;
+        img {
+            height: 44rem;
+            width: 44rem;
+            margin-right: 3rem;
+            margin-top: -2rem;
+        }
+    }
+}

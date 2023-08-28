@@ -4,6 +4,9 @@ import { BsCalendar2Check, BsFillBagFill } from "react-icons/bs";
 import FindTalentDropdown from "./src/components/find-talent-dropdown/FindTalentDropdown";
 import FindWorkDropdown from "./src/components/find-work-dropdown/FindWorkDropdown";
 import WhyUpworkDropdown from "./src/components/why-upwork-dropdown/WhyUpworkDropdown";
+import microsoftSvg from './src/assets/microsoft.svg';
+import airbnbSvg from './src/assets/airbnb.svg';
+import bissellSvg from './src/assets/bissell.svg';
 
 export const navItems = [
   {
@@ -279,4 +282,19 @@ export const consultationsItems = [
     header: 'Website Builders & CMS',
     image: 'https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/website-builders.6acb130a.png'
   },
+];
+
+export const trustedByItems = [
+  {
+    id: nanoid(),
+    svg: microsoftSvg,
+  },
+  {
+    id: nanoid(),
+    svg: airbnbSvg,
+  },
+  {
+    id: nanoid(),
+    svg: bissellSvg,
+  }
 ];
