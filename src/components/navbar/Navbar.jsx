@@ -7,6 +7,8 @@ import CustomBtn from "../buttons/customize-btns/CustomBtn";
 import DropdownTalent from "../dropdown-talent/DropdownTalent";
 import DropdownMore from "../dropdownMore/dropdownMore";
 import ResponsNav from "../responsive-comps/respons-nav/ResponsNav";
+import ResponsMenu from "../responsive-comps/respons-menu/ResponsMenu";
+import { useSelector } from "react-redux/es/hooks/useSelector";
 
 function reducer(state, action) {
   switch (action.type) {
@@ -41,6 +43,7 @@ const Navbar = () => {
   });
   const [showTalent, setShowTalent] = useState(false);
   const [showMore, setShowMore] = useState(false);
+  const isOpen = useSelector((state) => state.hamburger.isOpen);
 
   return (
     <div className="nav-container">
@@ -70,7 +73,10 @@ const Navbar = () => {
                   </li>
                 );
               })}
-              <li> <span>Enterprise</span> </li>
+              <li>
+                {" "}
+                <span>Enterprise</span>{" "}
+              </li>
             </ul>
           </div>
         </div>
@@ -105,6 +111,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+      {isOpen && <ResponsMenu />}
     </div>
   );
 };

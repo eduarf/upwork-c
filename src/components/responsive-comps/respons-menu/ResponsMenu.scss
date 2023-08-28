@@ -1,0 +1,16 @@
+.respons-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  .menu {
+  }
+  .bottom {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  }
+}
+
