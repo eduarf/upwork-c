@@ -8,7 +8,7 @@ const Header = () => {
     <div className='header'>
       <div className='left-side'>
         <h1>How work <br /> should work</h1>
-        <h3>Forget the old rules. You can have the best people.<br /> Right now. Right here.</h3>
+        <h3>Forget the old rules. You can have the best people. Right now. Right here.</h3>
         <CustomBtn name='Get started' type='primary' />
         <div className='trusted-by'>
             <h4>Trusted by</h4>
