@@ -1,22 +1,23 @@
 .primary {
-    padding: 1.15rem 2.6rem;
+    padding: 1rem 2.6rem;
     background-color: var(--color-primary-d);
     border-radius: 2rem;
-    border: none;
+    border: 2px solid var(--color-primary-d);
     font-size: 1.5rem;
     color: #fff;
-    font-weight: 400;
+    font-weight: 500;
     cursor: pointer;
     transition: all .3s ease-out;
     &:hover {
         background-color: var(--color-primary);
+        border-color: var(--color-primary);
     }
 }
 .full {
     width: 100%;
 }
 .basic {
-    padding: 1.15rem 2.6rem;
+    padding: 1rem 2.6rem;
     background-color: transparent;
     border: none;
     font-size: 1.5rem;
@@ -24,7 +25,15 @@
     cursor: pointer;
 }
 .secondary {
-    padding: 1.15rem 2.6rem;
+    padding: 1rem 2.6rem;
     background-color: transparent;
     border: 2px solid var(--color-primary);
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    cursor: pointer;
+    &:hover {
+        background-color: #f9f9f9;
+    }
 }
