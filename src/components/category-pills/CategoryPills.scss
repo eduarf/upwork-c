@@ -1,6 +1,5 @@
 .category-pills {
     padding: 5vh 4vw;
-   &__top-side {}
    &__header{
     font-size: 4.2rem;
     font-weight: 400;
@@ -32,6 +31,16 @@
     }
     @media only screen and (max-width: 680px) {
         grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .show-less {
+        font-size: 1.6rem;
+        font-weight: 600;
+        letter-spacing: -.5px;
+        color: var(--color-primary);
+        cursor: pointer;
+    }
+    .category-card-hidden {
+        display: none !important;
     }
     .category-card {
         background-color: var(--color-gray-l);
