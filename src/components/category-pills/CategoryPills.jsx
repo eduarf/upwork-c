@@ -4,9 +4,7 @@ import { categoryPillsItems } from "../../../data";
 import "./CategoryPills.scss";
 
 const CategoryPills = () => {
-  const [isScreenWidth680, setIsScreenWidth680] = useState(
-    window.innerWidth < 680
-  );
+  const [isScreenWidth680, setIsScreenWidth680] = useState(false);
   const [showMore, setShowMore] = useState(false);
 
   useEffect(() => {
@@ -24,7 +22,6 @@ const CategoryPills = () => {
   }, []);
 
   const lastThreeItems = categoryPillsItems.slice(-3);
-
   return (
     <div className="category-pills">
       <div className="category-pills__top-side">
