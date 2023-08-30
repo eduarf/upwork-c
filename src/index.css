@@ -12,6 +12,7 @@
   --color-white: rgb(255, 255, 255);
   --color-gray: rgb(94,109,85);
   --color-gray-l: rgb(242, 247, 242);
+  --color-gray-hover: rgb(228, 235, 228);
 }
 html {
   font-size: 62.5%;

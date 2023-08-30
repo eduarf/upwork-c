@@ -335,3 +335,54 @@ export const howToHireItems = [
     icon: <RiShieldStarLine />,
   },
 ];
+
+export const categoryPillsItems = [
+  {
+    id: nanoid(),
+    header: 'Development & IT',
+    star: '4.8/5',
+    skills: 1853,
+  },
+  {
+    id: nanoid(),
+    header: 'AI Services',
+    star: '4.8/5',
+    skills: 294
+  },
+  {
+    id: nanoid(),
+    header: 'Design & Creative',
+    star: '4.91/5',
+    skills: 968
+  },
+  {
+    id: nanoid(),
+    header: 'Sales & Marketing',
+    star: '4.77/5',
+    skills: 392,
+  },
+  {
+    id: nanoid(),
+    header: 'Writing & Translation',
+    star: '4.92/5',
+    skills: 505,
+  },
+  {
+    id: nanoid(),
+    header: 'Admin & Customer Support',
+    star: '4.77/5',
+    skills: 508,
+  },
+  {
+    id: nanoid(),
+    header: 'Finance & Accounting',
+    star: '4.79/5',
+    skills: 214,
+  },
+  {
+    id: nanoid(),
+    header: 'Engineering & Architecture',
+    star: '4.85/5',
+    skills: 650,
+  },
+];

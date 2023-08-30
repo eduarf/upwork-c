@@ -1,0 +1,87 @@
+.category-pills {
+    padding: 5vh 4vw;
+   &__top-side {}
+   &__header{
+    font-size: 4.2rem;
+    font-weight: 400;
+    letter-spacing: -1.5px;
+   }
+   &__looking-for {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    span {
+        font-size: 1.6rem;
+        color: var(--color-gray);
+        font-weight: 500;
+    }
+    a {
+        font-size: 1.6rem;
+        color: var(--color-primary-d);
+        font-weight: 500;
+    }
+   }  
+   &__bottom-side {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    row-gap: 1.5rem;
+    column-gap: 3.5rem;
+    margin-top: 4rem;
+    @media only screen and (max-width: 1180px){
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @media only screen and (max-width: 680px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .category-card {
+        background-color: var(--color-gray-l);
+        height: 15rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        border-radius: 8px;
+        @media only screen and (max-width: 1180px){
+           height: 12rem;
+        }
+        &:hover {
+            background-color: var(--color-gray-hover);
+            cursor: pointer;
+        }
+        h1 {
+            font-size: 2.3rem;
+            font-weight: 500;
+            letter-spacing: -.75px;
+            @media only screen and (max-width: 1180px){
+                font-size: 2rem;
+             }
+        }
+        .star-skills{
+            display: flex;
+            gap: 4.5rem;
+            align-items: center;
+            .star {
+                display: flex;
+                align-items: center;
+                gap: .3rem;
+                .icon {
+                    font-size: 1.6rem;
+                    color: var(--color-primary);
+                }
+                span {
+                    font-size: 1.6rem;
+                    color: var(--color-gray);
+                    font-weight: 500;
+                }
+            }
+            .skills {
+                span {
+                    font-size: 1.6rem;
+                    color: var(--color-gray);
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+   }
+}
