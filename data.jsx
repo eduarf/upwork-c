@@ -3,6 +3,7 @@ import { HiOutlineUserGroup } from "react-icons/hi";
 import { RiShieldStarLine } from "react-icons/ri";
 import { BsCalendar2Check, BsFillBagFill, BsPinAngle } from "react-icons/bs";
 import { FaPenSquare } from "react-icons/fa";
+import { SlEarphones } from "react-icons/sl";
 import FindTalentDropdown from "./src/components/find-talent-dropdown/FindTalentDropdown";
 import FindWorkDropdown from "./src/components/find-work-dropdown/FindWorkDropdown";
 import WhyUpworkDropdown from "./src/components/why-upwork-dropdown/WhyUpworkDropdown";
@@ -384,5 +385,23 @@ export const categoryPillsItems = [
     header: 'Engineering & Architecture',
     star: '4.85/5',
     skills: 650,
+  },
+];
+
+export const enterpriseListItems = [
+  {
+    id: nanoid(),
+    icon: <BsFillBagFill />,
+    text: 'Access expert talent to fill your skill gaps',
+  },
+  {
+    id: nanoid(),
+    icon: <BsFillBagFill />,
+    text: 'Control your workflow: hire, classify and pay your talent',
+  },
+  {
+    id: nanoid(),
+    icon: <SlEarphones />,
+    text: 'Partner with Upwork for end-to-end support',
   },
 ];
