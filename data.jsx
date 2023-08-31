@@ -1,9 +1,17 @@
 import { nanoid } from "nanoid";
 import { HiOutlineUserGroup } from "react-icons/hi";
 import { RiShieldStarLine } from "react-icons/ri";
-import { BsCalendar2Check, BsFillBagFill, BsPinAngle } from "react-icons/bs";
+import {
+  BsCalendar2Check,
+  BsFillBagFill,
+  BsPinAngle,
+  BsCheckCircleFill,
+  BsWrenchAdjustableCircleFill,
+} from "react-icons/bs";
 import { FaPenSquare } from "react-icons/fa";
 import { SlEarphones } from "react-icons/sl";
+import { MdStars } from "react-icons/md";
+import { AiFillDollarCircle } from "react-icons/ai";
 import FindTalentDropdown from "./src/components/find-talent-dropdown/FindTalentDropdown";
 import FindWorkDropdown from "./src/components/find-work-dropdown/FindWorkDropdown";
 import WhyUpworkDropdown from "./src/components/why-upwork-dropdown/WhyUpworkDropdown";
@@ -340,50 +348,50 @@ export const howToHireItems = [
 export const categoryPillsItems = [
   {
     id: nanoid(),
-    header: 'Development & IT',
-    star: '4.8/5',
+    header: "Development & IT",
+    star: "4.8/5",
     skills: 1853,
   },
   {
     id: nanoid(),
-    header: 'AI Services',
-    star: '4.8/5',
-    skills: 294
+    header: "AI Services",
+    star: "4.8/5",
+    skills: 294,
   },
   {
     id: nanoid(),
-    header: 'Design & Creative',
-    star: '4.91/5',
-    skills: 968
+    header: "Design & Creative",
+    star: "4.91/5",
+    skills: 968,
   },
   {
     id: nanoid(),
-    header: 'Sales & Marketing',
-    star: '4.77/5',
+    header: "Sales & Marketing",
+    star: "4.77/5",
     skills: 392,
   },
   {
     id: nanoid(),
-    header: 'Writing & Translation',
-    star: '4.92/5',
+    header: "Writing & Translation",
+    star: "4.92/5",
     skills: 505,
   },
   {
     id: nanoid(),
-    header: 'Admin & Customer Support',
-    star: '4.77/5',
+    header: "Admin & Customer Support",
+    star: "4.77/5",
     skills: 508,
   },
   {
     id: nanoid(),
-    header: 'Finance & Accounting',
-    star: '4.79/5',
+    header: "Finance & Accounting",
+    star: "4.79/5",
     skills: 214,
   },
   {
     id: nanoid(),
-    header: 'Engineering & Architecture',
-    star: '4.85/5',
+    header: "Engineering & Architecture",
+    star: "4.85/5",
     skills: 650,
   },
 ];
@@ -392,17 +400,17 @@ export const enterpriseListItems = [
   {
     id: nanoid(),
     icon: <BsFillBagFill />,
-    text: 'Access expert talent to fill your skill gaps',
+    text: "Access expert talent to fill your skill gaps",
   },
   {
     id: nanoid(),
     icon: <BsFillBagFill />,
-    text: 'Control your workflow: hire, classify and pay your talent',
+    text: "Control your workflow: hire, classify and pay your talent",
   },
   {
     id: nanoid(),
     icon: <SlEarphones />,
-    text: 'Partner with Upwork for end-to-end support',
+    text: "Partner with Upwork for end-to-end support",
   },
 ];
 
@@ -411,17 +419,56 @@ export const rebrandDeliveryItems = [
     id: nanoid(),
     header: `Post a job 
     and hire a pro`,
-    tag: 'Talent Marketplace',
+    tag: "Talent Marketplace",
   },
   {
     id: nanoid(),
     header: `Browse and 
     buy projects`,
-    tag: 'Project Catalog',
+    tag: "Project Catalog",
   },
   {
     id: nanoid(),
-    header: 'Get advice from an industry expert',
-    tag: 'Consultations',
+    header: "Get advice from an industry expert",
+    tag: "Consultations",
+  },
+];
+
+export const whyUpworkSecLeftItems = [
+  {
+    id: nanoid(),
+    header: "Proof of quality",
+    description:
+      "Check any pro’s work samples, client reviews, and identity verification.",
+    icon: <MdStars />,
+  },
+  {
+    id: nanoid(),
+    header: "No cost until you hire",
+    description:
+      "Interview potential fits for your job, negotiate rates, and only pay for work you approve.",
+    icon: <AiFillDollarCircle />,
+  },
+  {
+    id: nanoid(),
+    header: "Safe and secure",
+    description:
+      "Focus on your work knowing we help protect your data and privacy. We’re here with 24/7 support if you need it.",
+    icon: <BsCheckCircleFill />,
+  },
+];
+
+export const whyUpWorkSecRightItems = [
+  {
+    id: nanoid(),
+    header: "4.9/5",
+    icon: <RiShieldStarLine />,
+    subtitle: "Clients rate professionals on Upwork",
+  },
+  {
+    id: nanoid(),
+    header: "Award winner",
+    icon: <BsWrenchAdjustableCircleFill />,
+    subtitle: "G2's 2021 Best Software Awards",
   },
 ];

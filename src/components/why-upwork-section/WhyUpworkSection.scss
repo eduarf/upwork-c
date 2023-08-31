@@ -1,0 +1,31 @@
+.whyUpworkSec {
+    &__left {
+        &--header {}
+        &--lists {
+            ul {
+                li {
+                    span {
+
+                    }
+                    div {
+                        h1 {}
+                        p {}
+                    }
+                }
+            }
+        }
+    }
+    
+    &__right {
+        &--header {}
+        ul {
+            li {
+                span {}
+                div {
+                    h1 {}
+                    p {}
+                }
+            }
+        }
+    }
+}
