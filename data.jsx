@@ -405,3 +405,23 @@ export const enterpriseListItems = [
     text: 'Partner with Upwork for end-to-end support',
   },
 ];
+
+export const rebrandDeliveryItems = [
+  {
+    id: nanoid(),
+    header: `Post a job 
+    and hire a pro`,
+    tag: 'Talent Marketplace',
+  },
+  {
+    id: nanoid(),
+    header: `Browse and 
+    buy projects`,
+    tag: 'Project Catalog',
+  },
+  {
+    id: nanoid(),
+    header: 'Get advice from an industry expert',
+    tag: 'Consultations',
+  },
+];

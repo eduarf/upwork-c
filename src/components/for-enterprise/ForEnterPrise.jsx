@@ -1,6 +1,6 @@
 import "./ForEnterPrise.scss";
 import { enterpriseListItems } from "../../../data";
-import enterpriseImage from '../../assets/enterprise-image.jpg';
+import enterpriseImage from '../../assets/enterprise-image.jpeg';
 import CustomBtn from '../buttons/customize-btns/CustomBtn';
 
 const ForEnterPrise = () => {
