@@ -6,9 +6,9 @@ const WhyUpworkSection = () => {
   return (
     <div className="whyUpworkSec">
       <div className="whyUpworkSec__left">
-        <div className="whyUpworkSec__left--header">
-          Why businesses turn to Upwork
-        </div>
+        <h1 className="whyUpworkSec__left--header">
+          Why businesses <br /> turn to Upwork
+        </h1>
         <div className="whyUpworkSec__left--lists">
           <ul>
             {whyUpworkSecLeftItems.map((item) => {
