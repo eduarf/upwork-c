@@ -472,3 +472,18 @@ export const whyUpWorkSecRightItems = [
     subtitle: "G2's 2021 Best Software Awards",
   },
 ];
+
+export const findGreatWorkSectionItems = [
+  {
+    id: nanoid(),
+    text: 'Find opportunities for every stage of your freelance career',
+  },
+  {
+    id: nanoid(),
+    text: 'Control when, where, and how you work'
+  },
+  {
+    id: nanoid(),
+    text: 'Explore different ways to earn',
+  },
+];

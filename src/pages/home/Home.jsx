@@ -1,4 +1,5 @@
 import CategoryPills from "../../components/category-pills/CategoryPills";
+import FindGreatWork from "../../components/find-great-work/FindGreatWork";
 import ForEnterPrise from "../../components/for-enterprise/ForEnterPrise";
 import Header from "../../components/header/Header";
 import HowToHire from "../../components/how-to-hire/HowToHire";
@@ -14,6 +15,7 @@ const Home = () => {
     <ForEnterPrise />
     <RebrandDelivery />
     <WhyUpworkSection />
+    <FindGreatWork />
   </div>;
 };
 
