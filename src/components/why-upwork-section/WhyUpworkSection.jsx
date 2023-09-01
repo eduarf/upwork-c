@@ -1,10 +1,11 @@
 import "./WhyUpworkSection.scss";
-// import WhyUpworkPng from  '../../assets/why-upwork-png.png';
+import WhyUpworkPng from  '../../assets/why-upwork-png.png';
 import { whyUpworkSecLeftItems, whyUpWorkSecRightItems } from "../../../data";
 
 const WhyUpworkSection = () => {
   return (
     <div className="whyUpworkSec">
+      <img src={WhyUpworkPng} alt="image" className="whyUpworkSec__img" />
       <div className="whyUpworkSec__left">
         <h1 className="whyUpworkSec__left--header">
           Why businesses <br /> turn to Upwork
