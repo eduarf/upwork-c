@@ -55,13 +55,42 @@
         width: 36%;
         background-color: var(--color-primary);
         border-radius: 1rem;
-        &--header {}
+        padding: 2rem 2rem 8rem 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        &--header {
+            font-size: 3.3rem;
+            font-weight: 500;
+            color: var(--color-white);
+            letter-spacing: -1px;
+            line-height: 1.05;
+            margin-bottom: 2rem;
+        }
         ul {
+            display: flex;
+            flex-direction: column;
+            gap: .2rem;
             li {
-                span {}
+                list-style-type: none;
+                display: flex;
+                align-items: flex-start;
+                gap: 1.5rem;
+                span {
+                    font-size: 3.6rem;
+                    color: var(--color-white);
+                }
                 div {
-                    h1 {}
-                    p {}
+                    h1 {
+                        font-size: 3.3rem;
+                        color: var(--color-white);
+                    }
+                    p {
+                        font-size: 1.6rem;
+                        color: var(--color-white);
+                        letter-spacing: -.4px;
+                        font-weight: 500;
+                    }
                 }
             }
         }

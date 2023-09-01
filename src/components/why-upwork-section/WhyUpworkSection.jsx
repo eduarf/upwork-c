@@ -26,7 +26,7 @@ const WhyUpworkSection = () => {
         </div>
       </div>
       <div className="whyUpworkSec__right">
-        <h1 className="whyUpworkSec__right--header">{`We're the world's work marketplace`}</h1>
+        <h1 className="whyUpworkSec__right--header">{`We're `} <br />  {`the world's work`} <br /> {`marketplace`}</h1>
         <ul>
           {whyUpWorkSecRightItems.map((item) => {
             return (
@@ -34,7 +34,7 @@ const WhyUpworkSection = () => {
                 <span>{item.icon}</span>
                 <div>
                   <h1>{item.header}</h1>
-                  <p>{item.description}</p>
+                  <p>{item.subtitle}</p>
                 </div>
               </li>
             );
