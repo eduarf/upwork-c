@@ -11,8 +11,8 @@ import { GrLinkNext, GrLinkPrevious } from "react-icons/gr";
 
 const svgItems = [
   nasdaqLightSmSvg,
-  bisselSvg,
   automatticSvg,
+  bisselSvg,
   cotySvg,
   rancherSvg,
 ];
@@ -45,7 +45,7 @@ const Testimonials = () => {
           </div>
         ) : null}
 
-        {testimonialsItems.map((item,index) => {
+        {testimonialsItems.map((item, index) => {
           return (
             <div
               key={item.id}
@@ -53,7 +53,7 @@ const Testimonials = () => {
               style={{
                 backgroundColor: item.color,
                 transform: currentSlider ? `translateX(-80%)` : "",
-                opacity: (index === 0 && currentSlider === true) ? '.4' : '1'
+                opacity: index === 0 && currentSlider === true ? ".4" : "1",
               }}
             >
               <div className="testimonials-sec__slider--item__top">
@@ -85,18 +85,23 @@ const Testimonials = () => {
         })}
         <div
           className="testimonials-sec__sliderWImg"
-          style={{ transform: currentSlider ? `translateX(-80%)` : "", opacity: !currentSlider ? '.4' :  1 }}
+          style={{
+            transform: currentSlider ? `translateX(-80%)` : "",
+            opacity: !currentSlider ? ".4" : 1,
+          }}
         >
           <div className="testimonials-sec__sliderWImg--left"></div>
           <div className="testimonials-sec__sliderWImg--right">
             <div>Andy many more</div>
-            {svgItems.map((item) => {
-              return (
-                <figure key={nanoid()}>
-                  <img src={item} alt="svg" />
-                </figure>
-              );
-            })}
+            <div className="testimonials-sec__sliderWImg--right__svg-container">
+              {svgItems.map((item) => {
+                return (
+                  <figure key={nanoid()}>
+                    <img src={item} alt="svg" />
+                  </figure>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
