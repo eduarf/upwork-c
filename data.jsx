@@ -18,6 +18,9 @@ import WhyUpworkDropdown from "./src/components/why-upwork-dropdown/WhyUpworkDro
 import microsoftSvg from "./src/assets/microsoft.svg";
 import airbnbSvg from "./src/assets/airbnb.svg";
 import bissellSvg from "./src/assets/bissell.svg";
+import testimonialsMicrosoftSvg from './src/assets/microsoft-lg-light.svg';
+import testimonialsNasdaqSvg from './src/assets/nasdaq-light.svg';
+
 
 export const navItems = [
   {
@@ -485,5 +488,30 @@ export const findGreatWorkSectionItems = [
   {
     id: nanoid(),
     text: 'Explore different ways to earn',
+  },
+];
+
+export const testimonialsItems = [
+  {
+    id: nanoid(),
+    svg: testimonialsNasdaqSvg,
+    statement: '“Upwork enables us to differentiate ourselves from our competitors and produce content at a higher caliber.”',
+    author: 'Josh Machiz, Chief Digital Officer',
+    firstTitle: 'Emmy Winning',
+    firstSubTitle: 'Facebook Watch program',
+    secondTitle: 'Millions',
+    secondSubTitle: 'of impressions generated per client per IPO',
+    color: 'rgb(19,84,78)',
+  },
+  {
+    id: nanoid(),
+    svg: testimonialsMicrosoftSvg,
+    statement: '“One of the advantages of utilizing freelancers is finding talent with different skills quickly as our needs change.”',
+    author: 'Carol Taylor, Director of Content Experience',
+    firstTitle: '50% Faster',
+    firstSubTitle: 'launch of projects',
+    secondTitle: '10,000',
+    secondSubTitle: 'projects completed',
+    color: 'rgb(188,81,27)',
   },
 ];

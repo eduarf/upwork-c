@@ -1,0 +1,125 @@
+.testimonials-sec {
+  padding: 5vh 4vw;
+  &__header {
+    font-size: 7.2rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -3px;
+    margin-bottom: 3rem;
+  }
+  &__slider {
+    display: grid;
+    grid-template-columns: 44% 44% 44%;
+    overflow: hidden;
+    position: relative;
+    .next-btn {
+        height: 4rem;
+        width: 4rem;
+        background-color: var(--color-white);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 1rem;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        z-index: 15;
+        &__icon {
+            font-size: 2.2rem;
+        }
+    }
+    .prev-btn {
+        height: 4rem;
+        width: 4rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 1rem;
+        background-color: var(--color-white);
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        z-index: 15;
+        &__icon {
+            font-size: 2.2rem;
+            color: green;
+        }
+    }
+    &--item {
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 8rem;
+      border-radius: 1rem;
+      transition: transform .65s ease-in-out;
+      opacity: 1;
+      &__top {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        &--h4 {
+          font-size: 2.6rem;
+          font-weight: 500;
+          line-height: 1;
+          letter-spacing: -1px;
+          color: var(--color-white);
+        }
+        div {
+          font-size: 1.6rem;
+          font-weight: 500;
+          color: #d5e0d5;
+          margin-top: -1rem;
+        }
+      }
+      &__bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50%;
+        &--result {
+          font-size: 1.6rem;
+          font-weight: 600;
+          margin-bottom: 2rem;
+          border-bottom: 1px solid #d5e0d5;
+          padding-bottom: 1.2rem;
+          color: #d5e0d5;
+        }
+        &--containers {
+          display: grid;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          &__container {
+            display: flex;
+            flex-direction: column;
+            h4 {
+              font-size: 2.6rem;
+              color: var(--color-white);
+            }
+            div {
+                font-size: 1.6rem;
+                font-weight: 500;
+                color: #d5e0d5;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__sliderWImg {
+    background-color: red;
+    border-radius: 1rem;
+    transition: all .65s ease-in-out;
+    &--left {
+    }
+    &--right {
+      div {
+        figure {
+          img {
+          }
+        }
+      }
+    }
+  }
+}
