@@ -6,7 +6,7 @@ import bisselSvg from "../../assets/bissell-light.svg";
 import automatticSvg from "../../assets/automattic-light.svg";
 import cotySvg from "../../assets/coty-light.svg";
 import rancherSvg from "../../assets/rancher-v2-light.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { GrLinkNext, GrLinkPrevious } from "react-icons/gr";
 
 const svgItems = [
@@ -19,28 +19,50 @@ const svgItems = [
 
 const Testimonials = () => {
   const [currentSlider, setCurrentSlider] = useState(false);
+  const [isScreenWidth768, setIsScreenWidth768] = useState(false);
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth < 768) {
+        console.log('true');
+        setIsScreenWidth768(true);
+      } else {
+        setIsScreenWidth768(false);
+      }
+    }
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const nextBtn = (event) => {
+    if(isScreenWidth768) return;
     event.stopPropagation();
     setCurrentSlider(true);
   };
   const prevBtn = (event) => {
+    if(isScreenWidth768) return;
     event.stopPropagation(); // Event olayının yayılmasını engeller
     setCurrentSlider(false);
   };
 
+  useEffect(() => {
+
+  }, []);
+
   return (
     <section className="testimonials-sec">
       <h1 className="testimonials-sec__header">
-        Trusted by leading <br /> brands and startups
+        Trusted by leading brands and startups
       </h1>
-      <div className="testimonials-sec__slider" onClick={nextBtn}>
+      <div className="testimonials-sec__slider" onClick={isScreenWidth768 ? nextBtn : null}>
         {!currentSlider ? (
           <div className="next-btn">
             <GrLinkNext className="next-btn__icon" />
           </div>
         ) : null}
         {currentSlider ? (
-          <div className="prev-btn" onClick={prevBtn}>
+          <div className="prev-btn" onClick={isScreenWidth768 ?  prevBtn : null}>
             <GrLinkPrevious className="prev-btn__icon" />
           </div>
         ) : null}
@@ -87,7 +109,7 @@ const Testimonials = () => {
           className="testimonials-sec__sliderWImg"
           style={{
             transform: currentSlider ? `translateX(-80%)` : "",
-            opacity: !currentSlider ? ".4" : 1,
+            opacity: (!currentSlider && !isScreenWidth768) ? ".4" : 1,
           }}
         >
           <div className="testimonials-sec__sliderWImg--left"></div>

@@ -1,17 +1,39 @@
 .testimonials-sec {
   padding: 5vh 4vw;
+  @media only screen and (max-width: 1000px){
+    padding: 5vh 2vw;
+  }
+  @media only screen and (max-width: 768px){
+    padding: 5vh 0;
+  }
   &__header {
     font-size: 7.2rem;
     font-weight: 500;
     line-height: 1;
     letter-spacing: -3px;
     margin-bottom: 3rem;
+    width: 60%;
+    @media only screen and (max-width: 1200px){
+        font-size: 6.2rem;
+        margin: -1rem 1rem 3rem 1rem;
+    }
+    @media only screen and (max-width: 700px){
+        font-size: 4.2rem;
+        width: 90%;
+    }
+    @media only screen and (max-width: 480px){
+        font-size: 3.6rem;
+        margin: -1rem 0 3rem 1rem;
+    }
   }
   &__slider {
     display: grid;
     grid-template-columns: 44% 44% 44%;
     overflow: hidden;
     position: relative;
+    @media only screen and (max-width: 768px){
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
     .next-btn {
         height: 4rem;
         width: 4rem;
@@ -25,8 +47,20 @@
         place-items: center;
         cursor: pointer;
         z-index: 15;
+        @media only screen and (max-width: 768px){
+            display: none;
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+        }
         &__icon {
             font-size: 2.2rem;
+            @media only screen and (max-width: 768px){
+                display: none;
+                visibility: hidden;
+                opacity: 0;
+                pointer-events: none;
+            }
         }
     }
     .prev-btn {
@@ -42,9 +76,21 @@
         place-items: center;
         cursor: pointer;
         z-index: 15;
+        @media only screen and (max-width: 768px){
+            display: none;
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+        }
         &__icon {
             font-size: 2.2rem;
             color: green;
+            @media only screen and (max-width: 768px){
+                display: none;
+                visibility: hidden;
+                opacity: 0;
+                pointer-events: none;
+            }
         }
     }
     &--item {
@@ -56,22 +102,42 @@
       border-radius: 1rem;
       transition: transform .65s ease-in-out;
       opacity: 1;
+      @media only screen and (max-width: 1200px){
+        gap: 0rem;
+      }
+      @media only screen and (max-width: 768px){
+        border-radius: 0;
+        padding: 3rem 3rem 5rem 3rem;
+        }
+        @media only screen and (max-width: 480px) {
+            padding: 3rem 3rem 5rem 1rem;
+        }
       &__top {
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        @media only screen and (max-width: 1200px){
+            gap: 1rem;
+        }
         &--h4 {
           font-size: 2.6rem;
           font-weight: 500;
           line-height: 1;
           letter-spacing: -1px;
           color: var(--color-white);
+          @media only screen and (max-width: 1000px){
+            font-size: 2rem;
+            
+          }
         }
         div {
           font-size: 1.6rem;
           font-weight: 500;
           color: #d5e0d5;
           margin-top: -1rem;
+          @media only screen and (max-width: 1200px){
+            margin-top: 0;
+          }
         }
       }
       &__bottom {
@@ -90,6 +156,9 @@
         &--containers {
           display: grid;
           grid-template-columns: repeat(2, minmax(0, 1fr));
+          @media only screen and (max-width: 1200px){
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+          }
           &__container {
             display: flex;
             flex-direction: column;
@@ -113,12 +182,25 @@
     transition: all .65s ease-in-out;
     display: flex;
     overflow: hidden;
+    @media only screen and (max-width: 768px){
+        border-radius: 0;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
     &--left {
         width: 45%;
         background-image: url('../../assets/slider-img.jpeg');
         background-size: cover;
         object-fit: cover;
         background-position: right;
+        @media only screen and (max-width: 1000px){
+            display: none;
+        }
+        @media only screen and (max-width: 768px){
+            display: block;
+            width: 100%;
+            background-position: top;
+        }
     }
     &--right {
         width: 55%;
@@ -126,6 +208,10 @@
         display: flex;
         flex-direction: column;
         gap: 5rem;
+        @media only screen and (max-width: 1000px){
+            width: 100%;
+            align-items: center;
+        }
       div {
         font-size: 2rem;
         color: var(--color-white);
@@ -137,6 +223,9 @@
         gap: 1rem;
         flex-direction: column;
         align-items: flex-start;
+        @media only screen and (max-width: 1000px){
+            align-items: center;
+        }
         figure:first-child img {
             height: 2.8rem;
         }
