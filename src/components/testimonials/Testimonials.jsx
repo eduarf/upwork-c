@@ -55,14 +55,14 @@ const Testimonials = () => {
       <h1 className="testimonials-sec__header">
         Trusted by leading brands and startups
       </h1>
-      <div className="testimonials-sec__slider" onClick={isScreenWidth768 ? nextBtn : null}>
+      <div className="testimonials-sec__slider" onClick={nextBtn}>
         {!currentSlider ? (
           <div className="next-btn">
             <GrLinkNext className="next-btn__icon" />
           </div>
         ) : null}
         {currentSlider ? (
-          <div className="prev-btn" onClick={isScreenWidth768 ?  prevBtn : null}>
+          <div className="prev-btn" onClick={prevBtn}>
             <GrLinkPrevious className="prev-btn__icon" />
           </div>
         ) : null}
