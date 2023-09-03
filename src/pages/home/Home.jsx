@@ -5,6 +5,7 @@ import Header from "../../components/header/Header";
 import HowToHire from "../../components/how-to-hire/HowToHire";
 import RebrandDelivery from "../../components/rebrand-delivery/RebrandDelivery";
 import Testimonials from "../../components/testimonials/Testimonials";
+import SupportUkraine from "../../components/we-support-ukraine/SupportUkraine";
 import WhyUpworkSection from "../../components/why-upwork-section/WhyUpworkSection";
 import "./Home.scss";
 
@@ -18,6 +19,7 @@ const Home = () => {
     <WhyUpworkSection />
     <FindGreatWork />
     <Testimonials />
+    <SupportUkraine />
   </div>;
 };
 
