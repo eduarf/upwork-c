@@ -7,6 +7,7 @@ import RebrandDelivery from "../../components/rebrand-delivery/RebrandDelivery";
 import Testimonials from "../../components/testimonials/Testimonials";
 import SupportUkraine from "../../components/we-support-ukraine/SupportUkraine";
 import WhyUpworkSection from "../../components/why-upwork-section/WhyUpworkSection";
+import RebrandSkills from '../../components/rebrand-skills/RebrandSkills';
 import "./Home.scss";
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
     <FindGreatWork />
     <Testimonials />
     <SupportUkraine />
+    <RebrandSkills />
   </div>;
 };
 

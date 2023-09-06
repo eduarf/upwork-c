@@ -515,3 +515,22 @@ export const testimonialsItems = [
     color: 'rgb(188,81,27)',
   },
 ];
+
+export const rebrandSkillsMenuItems = [
+  {
+    id: nanoid(),
+    name: 'Top skills',
+  },
+  {
+    id: nanoid(),
+    name: 'Trending skills',
+  },
+  {
+    id: nanoid(),
+    name: 'Top skills US',
+  },
+  {
+    id: nanoid(),
+    name: 'Project Catalog',
+  },
+];
