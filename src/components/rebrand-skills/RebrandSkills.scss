@@ -1,0 +1,10 @@
+.rebrand-skills {
+    padding: 5vh 4vw;
+    &__left{}
+    &__right{
+        &--item {
+            font-size: 1.6rem;
+            color: red;
+        }
+    }
+}
