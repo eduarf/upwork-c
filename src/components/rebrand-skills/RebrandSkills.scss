@@ -1,10 +1,39 @@
 .rebrand-skills {
     padding: 5vh 4vw;
-    &__left{}
+    display: flex;
+    &__left{
+        width: 35%;
+        ul {
+            list-style-type: none;
+            li {
+                font-size: 4rem;
+                font-weight: 600;
+                letter-spacing: -2px;
+                color: var(--color-primary);
+                cursor: pointer;
+            }
+        }
+    }
     &__right{
+        width: 65%;
+        ul {
+            list-style-type: none;
+        }
+        &--list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: .5rem;
+        }
         &--item {
-            font-size: 1.6rem;
-            color: red;
+            list-style-type: none;
+            font-size: 2.4rem;
+            font-weight: 400;
+            color: #758c9c;
+            letter-spacing: -1px;
+            cursor: pointer;
+            &:hover {
+                color: var(--color-primary);
+            }
         }
     }
 }
