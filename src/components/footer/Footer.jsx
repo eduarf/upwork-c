@@ -1,5 +1,5 @@
 import './Footer.scss';
-import { footerItems, followUsIcons } from '../../../data';
+import { footerItems, followUsIcons, footerBottomItems } from '../../../data';
 import FooterSubtitles from './FooterSubtitles/FooterSubtitles';
 import { AiOutlineApple, AiOutlineAndroid } from 'react-icons/ai';
 
@@ -34,7 +34,16 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="footer__bottom--copyright"></div>
+        <div className="footer__bottom--copyright">
+          <p>© 2015 - 2023 Upwork® Global Inc.</p>
+          <ul className='footer__bottom--copyright__list'>
+            {footerBottomItems.map((item) => {
+              return <li key={item.id}>
+                {item.name}
+              </li>
+            })}
+          </ul>
+        </div>
       </div>
     </div>
   )

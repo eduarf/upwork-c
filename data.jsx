@@ -616,3 +616,26 @@ export const followUsIcons = [
     icon: <AiOutlineInstagram />
   },
 ];
+
+export const footerBottomItems = [
+  {
+    id: nanoid(),
+    name: 'Terms of Service',
+  },
+  {
+    id: nanoid(),
+    name: 'Privacy Policy',
+  },
+  {
+    id: nanoid(),
+    name: 'CA Notice at Collection',
+  },
+  {
+    id: nanoid(),
+    name: 'Cookie Settings',
+  },
+  {
+    id: nanoid(),
+    name: 'Accessibility'
+  },
+];
