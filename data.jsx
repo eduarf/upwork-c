@@ -11,7 +11,7 @@ import {
 import { FaPenSquare } from "react-icons/fa";
 import { SlEarphones } from "react-icons/sl";
 import { MdStars } from "react-icons/md";
-import { AiFillDollarCircle } from "react-icons/ai";
+import { AiFillDollarCircle,AiOutlineFacebook,AiOutlineLinkedin,AiFillTwitterSquare,AiOutlineYoutube,AiOutlineInstagram } from "react-icons/ai";
 import FindTalentDropdown from "./src/components/find-talent-dropdown/FindTalentDropdown";
 import FindWorkDropdown from "./src/components/find-work-dropdown/FindWorkDropdown";
 import WhyUpworkDropdown from "./src/components/why-upwork-dropdown/WhyUpworkDropdown";
@@ -591,5 +591,28 @@ export const footerItems = [
       'Trust,Safety & Security',
       'Modern Slavery Statement',
     ],
+  },
+];
+
+export const followUsIcons = [
+  {
+    id: nanoid(),
+    icon: <AiOutlineFacebook />,
+  },
+  {
+    id: nanoid(),
+    icon: <AiOutlineLinkedin />
+  },
+  {
+    id: nanoid(),
+    icon: <AiFillTwitterSquare />
+  },
+  {
+    id: nanoid(),
+    icon: <AiOutlineYoutube />
+  },
+  {
+    id: nanoid(),
+    icon: <AiOutlineInstagram />
   },
 ];

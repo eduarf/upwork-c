@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 
 const FooterSubtitles = ({ subtitles }) => {
-  return <ul>
+  return <ul className="footer-subtitles">
     {subtitles.map((item) => {
         return <li key={nanoid()}> {item} </li>
     })}
