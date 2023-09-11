@@ -9,6 +9,7 @@ import SupportUkraine from "../../components/we-support-ukraine/SupportUkraine";
 import WhyUpworkSection from "../../components/why-upwork-section/WhyUpworkSection";
 import RebrandSkills from '../../components/rebrand-skills/RebrandSkills';
 import "./Home.scss";
+import Footer from "../../components/footer/Footer";
 
 const Home = () => {
   return <div>
@@ -22,6 +23,7 @@ const Home = () => {
     <Testimonials />
     <SupportUkraine />
     <RebrandSkills />
+    <Footer />
   </div>;
 };
 

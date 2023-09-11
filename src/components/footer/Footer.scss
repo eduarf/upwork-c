@@ -1,0 +1,19 @@
+.footer {
+    margin: 5vh 2vw;
+    padding: 10vh 5vw;
+    background-color: rgb(0,30,0);
+    color: var(--color-white);
+    border-radius: 1rem;
+    &__menu {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1rem;
+        &--item {
+            &__heading {
+                font-size: 1.4rem;
+                font-weight: 500;
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+}
