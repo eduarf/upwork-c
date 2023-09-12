@@ -3,6 +3,9 @@
     flex-direction: column;
     letter-spacing: -.1px;
     gap: .7rem;
+    @media only screen and (max-width: 700px){
+        margin-left: 1rem;
+    }
     li {
         list-style-type: none;
         font-size: 1.4rem;

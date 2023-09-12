@@ -1,18 +1,42 @@
 import './Footer.scss';
-import { footerItems, followUsIcons, footerBottomItems } from '../../../data';
+import {  followUsIcons, footerBottomItems } from '../../../data';
 import FooterSubtitles from './FooterSubtitles/FooterSubtitles';
 import { AiOutlineApple, AiOutlineAndroid } from 'react-icons/ai';
-
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect, useState } from 'react';
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+import { footerToggleFalse, footerToggleTrue, footerToggle } from '../../features/footer/footer';
 const Footer = () => {
+  const footerItems = useSelector((state) => state.footer).footerItems;
+  const [is700, setIs700] = useState(false);
+ const dispatch = useDispatch();
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 700) {
+        dispatch(footerToggleFalse());
+        setIs700(true);
+      }
+      else if(window.innerWidth > 700) {
+        dispatch(footerToggleTrue());
+        setIs700(false);
+      }
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <div className='footer'>
       <div className="footer__menu">
          {footerItems.map((item) => {
-          return <div key={item.id} className='footer__menu--item'>
+          return <div key={item.id} className='footer__menu--item' onClick={() => dispatch(footerToggle(item.title))}>
             <div className='footer__menu--item__heading'>
               {item.title}
+             {is700 && item.isOpen  ?  <IoIosArrowUp />  : <IoIosArrowDown />}
             </div>
-            <FooterSubtitles subtitles={item.subtitles} />
+            { item.isOpen ?  <FooterSubtitles subtitles={item.subtitles} /> : null}
           </div>
          })}
       </div>
